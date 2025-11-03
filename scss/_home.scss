@@ -1,0 +1,133 @@
+//
+// home.scss
+//
+
+.bg-half-120 {
+    padding: 170px 0;
+    background-size: cover;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+.bg-full-120 {
+    padding: 120px 0px;
+}
+.bg-half-125 {
+    padding: 125px 0;
+}
+.title-heading {
+    line-height: 26px;
+    .heading {
+        font-size: 57px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+} 
+.pb-60 {
+    padding-bottom: 60px;
+}
+.py--50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.alert.alert-pills {
+    border-radius: 30px;
+    display: inline-block;
+    background: $white;
+}
+.alert {
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.badge.badge-pill {
+    border-radius: 12px;
+}
+.alert.alert-pills .content {
+    font-weight: 600;
+}
+.hero-area {    
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+.title-heading img {
+    height: 200px;
+    border: 5px solid #dee2e6;
+}
+
+.max-600 {
+    max-width: 600px;   
+}
+
+.home2-section {
+    background: linear-gradient(180deg, #C0DEFE 0%, #FFFCEF 100%);
+    // background: #FFFCEF;
+}
+
+.title-heading {
+    .home-heading {
+        background: linear-gradient(90deg, #141115, #E5C755);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 54px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+}
+
+.hero-thumb-exep {
+    position: absolute;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(20px);
+    background-color: #007bff33;
+    bottom: 50%;
+    right: -1rem;
+    animation: up-down-img 1.7s ease-in-out infinite alternate both;
+}
+
+.hero-thumb-percentage {
+    position: absolute;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(20px);
+    background-color: #007bff33;
+    bottom: 25%;
+    left: -30px;
+    animation: up-down-img 1.7s ease-in-out infinite alternate both;
+}
+
+// Yoga Demo
+.yoga-section {
+    background-image: url("../images/home/yoga-01.jpg");
+    background-size: cover;
+    background-position: center center;
+    .yoga-hero {
+        padding: 150px 0px 80px 0px;
+    }
+
+}
+
+.title-heading {
+    .yoga-maintitle {
+        font-size: 54px;
+        line-height: 1.3;
+        font-family: $font-family-third !important;
+    }
+    .yoga-subtitle {
+        font-family: $font-family-third !important;
+    }
+}
+
+.yoga-counter-section {
+    h5{
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+

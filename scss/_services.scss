@@ -1,0 +1,197 @@
+//
+// services.scss
+//
+.feature-widget {
+    padding: 30px 45px;
+    background-color: #ffffff;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+    .fea.icon-md {
+        height: 38px;
+        width: 38px;
+    }
+}
+.services-texts {
+    .title {
+        font-size: 20px;
+    }
+}
+.feature-widget:hover {
+    box-shadow: 0 10px 25px 10px rgba(0,0,0,.1);  
+    .services-texts {
+        .title {
+            color: $black;
+        }
+    }
+    .services-icon { 
+        color: $primary;
+    }
+}
+
+
+// Doctor Services.scss
+.services-post {
+    background-color: #f6f7fa;
+    .content {
+        .services-title {
+            font-weight: 600;
+            font-size: 20px;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+        .services-subtitle {
+            margin-bottom: 24px;
+            font-size: 16px;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+        .readmore {
+            font-size: 16px;
+            transition: all 0.5s ease;
+            color: $primary;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+}
+
+// Yoga Classes
+.yoga-content {
+    .yoga-title {
+        font-size: 24px;
+        font-weight: 600;
+        transition: all 0.5s ease;
+        font-family: $font-family-third;
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    .yoga-subtitle {
+        margin-bottom: 24px;
+        font-size: 15px;
+        transition: all 0.5s ease;
+    }
+}
+
+.yoga-schedule-post {
+    .yoga-content {
+        .yoga-schedule-box {
+            p {
+                color: $dark;
+            }
+            border-right: 1px solid #ced4da;
+            .yoga-time-text {
+                font-size: 16px;
+                font-weight: 500;
+                color: $dark;
+                font-family: $font-family-third;
+            }
+        }
+        .yoga-content-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $font-family-third;
+        }
+    }
+}
+
+.video-full {
+    .yoga-view {
+        overflow: hidden;
+        height: 100vh;
+        video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+}
+
+// Support
+.section-subscription {
+    padding: 60px 100px;
+    background-color: #091331;
+    position: relative;
+    .subscription-title {
+        font-size: 50px;
+        line-height: 1.2em;
+        font-weight: 600;
+    }
+}
+
+.section-subscription-wrap {
+    .footer-decoration-one {
+        opacity: .6;
+        position: absolute;
+        inset: 20px auto auto -10px;
+    }
+    .footer-decoration-two {
+        opacity: .6;
+        position: absolute;
+        inset: auto -70px 20px auto;
+    }
+}
+
+// Follow  yoga
+.follow-container {
+    cursor: pointer;
+    &:hover {
+        .card-img {
+            .icons {
+                opacity: 1;
+            }
+        }
+    }
+    .card-img {
+        .icons {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 50%;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.5s;
+            transform: translateY(-50%);
+            .work-icon {
+                height: 45px;
+                width: 45px;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+                background-color: $primary !important;
+                &:hover {
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .yoga-schedule-post {
+        .yoga-content {
+            .yoga-schedule-box {
+                border-right: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-area .hero-thumb-exep, .hero-thumb-percentage {
+        display: none;
+    }
+    .section-subscription {
+        padding: 30px 30px;
+    }
+    .section-subscription-wrap {
+        display: none;
+    }
+}

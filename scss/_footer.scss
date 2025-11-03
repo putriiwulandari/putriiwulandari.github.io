@@ -1,0 +1,111 @@
+//
+// 
+// 
+.footer {
+    padding: 60px 0;
+    position: relative;
+    .footer-logo {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+.para-desc {
+    max-width: 700px;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.social-icon li a {
+    color: $black;
+    border: 1px solid $black;
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    font-size: 15px;
+    width: 32px;
+    line-height: 30px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary !important;
+        color: $white !important;
+    }
+}
+
+.footer-bar {
+    border-top: 1px solid #ced4da;
+    padding: 25px 0;
+}
+
+.footer-brand {
+    margin-bottom: 24px;
+}
+
+.footer-main {
+    margin-bottom: 24px;
+    .footer-title {
+        font-size: 20px;
+    }
+}
+
+.footer-pages {
+    ul {
+        li {
+            margin-top: 0.35rem;
+            .menu-link {
+                color: $dark;
+                font-size: 16px;
+                transition: all 1s;
+                &:hover {
+                    color: $primary;
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
+
+.footer-section {
+    padding: 100px 0;
+    position: relative;
+    .subscribe {
+        .form-group {
+            .form-control {
+                background-color: $white;
+                border: 1px solid #e9ecef;
+                border-radius: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: left;
+                padding: 10px 30px 10px 20px;
+                transition: all 1s;
+                &:focus {
+                    box-shadow: none !important;
+                    border: 1px solid $primary;
+                }
+            }
+        }
+        button {
+            color: #ffffff;
+            padding: 6px 10px;
+            position: absolute;
+            border-radius: 3px;
+            top: 6px;
+            right: 12px;
+            background: $primary;
+            border: 0;
+        }
+    }
+}
+
+.form-control {
+    border: 1px solid #e9ecef;
+    font-size: 14px !important;
+    line-height: 30px;
+    text-align: left;
+    color: #1d1d1d !important;
+}
